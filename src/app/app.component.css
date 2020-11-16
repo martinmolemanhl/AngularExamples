@@ -1,3 +1,4 @@
-p {
-  font-family: Lato;
+ul.mylist li {
+  font-weight:bold;
+  font-family: sans-serif;
 }

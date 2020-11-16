@@ -1,3 +1,9 @@
-<ul>
-  <li *ngFor="let f of fruit">{{f}}</li>
-</ul>
+<div>
+	<p>Het begin</p>
+	<table class="mylist">
+		<tr *ngFor="let i of numbers">
+			<app-table-row [getal]="i" [tekst]="titel"></app-table-row>
+		</tr>
+	</table>
+	<p>het einde</p>
+</div>

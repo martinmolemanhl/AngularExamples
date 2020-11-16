@@ -7,12 +7,11 @@ import { Component, VERSION } from "@angular/core";
 })
 export class AppComponent {
   name = "Angular " + VERSION.major;
-  public fruit: string[] = [];
 
+    public numbers = [1,2,3,4,5,6,7,8,9,10]; 
+    public titel = 'hoi hoi';
+  
   constructor() {
-    this.fruit.push("Apple");
-    this.fruit.push("Orange");
-    this.fruit.push("Banana");
-    this.fruit.push("Pineapple");
+     
   }
 }
