@@ -2,3 +2,8 @@ ul.mylist li {
   font-weight:bold;
   font-family: sans-serif;
 }
+
+td {
+  background-color: red;
+  color: white;
+}
