@@ -22,10 +22,13 @@ export class AppComponent {
 
   //public fruit: Array<Fruit>;
   public fruits: Fruit[];
+  public selectedFruit: Fruit;
 
   constructor() {
     // this.fruit = new Array<Fruit>();
     this.fruits = [];
+    // this.selectedFruit = undefined; --> dit is de default value van een variabele.
+
     this.fruits.push(new Fruit("Apple", "Green"));
     this.fruits.push(new Fruit("Orange", "Orange"));
     this.fruits.push(new Fruit("Pineapple", "Yellow/Green"));
@@ -34,8 +37,7 @@ export class AppComponent {
     this.fruits.push(new Fruit("Watermelon", "Green"));
   }
 
-  handleClickEvent(event: MouseEvent): void {
-    console.log("xyz");
-    // console.log(fruit);
+  handleClickEvent(event: MouseEvent, fruit: Fruit): void {
+    this.selectedFruit = fruit;
   } // handleClickEvent()
 }

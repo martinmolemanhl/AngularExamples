@@ -5,3 +5,8 @@ ul li {
 ul li:hover {
   background-color: lightgray;
 }
+
+li.ikbengeselecteerd {
+  background-color: darkgray;
+  color: white;
+}

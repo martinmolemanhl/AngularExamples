@@ -1,6 +1,9 @@
 <ul>
 	<!-- in Angular moet je een aanroep van een functie specificeren bij een eventhandler -->
-	<li (click)="handleClickEvent($event)" *ngFor="let fruit of fruits">
+	<li (click)="handleClickEvent($event, fruit)" *ngFor="let fruit of fruits"
+		[class.ikbengeselecteerd]="fruit === selectedFruit">
 		Fruit {{fruit.naam}} has color {{fruit.color}}
 	</li>
 </ul>
+<p *ngIf="selectedFruit">U heeft geselecteerd: {{selectedFruit.naam }} ({{selectedFruit.color}})</p>
+<p *ngIf="!selectedFruit">U heeft nog niks geselecteed!<p>
