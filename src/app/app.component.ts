@@ -1,4 +1,5 @@
 import { Component, VERSION } from "@angular/core";
+import { Fruit } from "./fruit";
 
 @Component({
   selector: "my-app",
@@ -8,6 +9,7 @@ import { Component, VERSION } from "@angular/core";
 export class AppComponent {
   name = "Angular " + VERSION.major;
 
+  /*
   public fruits = [
     "Apple",
     "Orange",
@@ -16,10 +18,24 @@ export class AppComponent {
     "Papaya",
     "Watermelon"
   ];
+*/
 
-  constructor() {}
+  //public fruit: Array<Fruit>;
+  public fruits: Fruit[];
 
-  handleClickEvent(event: MouseEvent, fruit: string): void {
-    console.log(fruit);
+  constructor() {
+    // this.fruit = new Array<Fruit>();
+    this.fruits = [];
+    this.fruits.push(new Fruit("Apple", "Green"));
+    this.fruits.push(new Fruit("Orange", "Orange"));
+    this.fruits.push(new Fruit("Pineapple", "Yellow/Green"));
+    this.fruits.push(new Fruit("Banana", "Yellow"));
+    this.fruits.push(new Fruit("Papaya", "Lightgreen"));
+    this.fruits.push(new Fruit("Watermelon", "Green"));
+  }
+
+  handleClickEvent(event: MouseEvent): void {
+    console.log("xyz");
+    // console.log(fruit);
   } // handleClickEvent()
 }

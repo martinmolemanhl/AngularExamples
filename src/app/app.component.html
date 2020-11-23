@@ -1,4 +1,6 @@
 <ul>
-  <!-- in Angular moet je een aanroep van een functie specificeren bij een eventhandler -->
-  <li (click)="handleClickEvent($event, fruit)" *ngFor="let fruit of fruits">{{fruit}}</li>
+	<!-- in Angular moet je een aanroep van een functie specificeren bij een eventhandler -->
+	<li (click)="handleClickEvent($event)" *ngFor="let fruit of fruits">
+		Fruit {{fruit.naam}} has color {{fruit.color}}
+	</li>
 </ul>
