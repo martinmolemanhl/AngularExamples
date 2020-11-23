@@ -8,10 +8,18 @@ import { Component, VERSION } from "@angular/core";
 export class AppComponent {
   name = "Angular " + VERSION.major;
 
-    public numbers = [1,2,3,4,5,6,7,8,9,10]; 
-    public titel = 'hoi hoi';
-  
-  constructor() {
-     
-  }
+  public fruits = [
+    "Apple",
+    "Orange",
+    "Pineapple",
+    "Banana",
+    "Papaya",
+    "Watermelon"
+  ];
+
+  constructor() {}
+
+  handleClickEvent(event: MouseEvent, fruit: string): void {
+    console.log(fruit);
+  } // handleClickEvent()
 }

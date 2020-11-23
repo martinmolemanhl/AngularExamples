@@ -1,9 +1,7 @@
-ul.mylist li {
-  font-weight:bold;
-  font-family: sans-serif;
+ul li {
+  cursor: pointer;
 }
 
-td {
-  background-color: red;
-  color: white;
+ul li:hover {
+  background-color: lightgray;
 }

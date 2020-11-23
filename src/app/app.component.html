@@ -1,38 +1,4 @@
-<div>
-	<p>Het begin</p>
-	<table class="mylist">
-		<tr *ngFor="let i of numbers">
-			<app-table-row [getal]="i" [tekst]="titel"></app-table-row>
-		</tr>
-	</table>
-	<p>het einde</p>
-</div>
-
-<table>
-	<tr>
-		<td>nog meer data</td>
-	</tr>
-	<tr>
-		<app-table-row tekst="Totaal aantal regels" [getal]="numbers.length"></app-table-row>
-	</tr>
-	<tr>
-		<td>nog meer data</td>
-	</tr>
-	<tr>
-		<td>nog meer data</td>
-	</tr>
-	<tr>
-		<td>nog meer data</td>
-	</tr>
-	<tr>
-		<td>nog meer data</td>
-	</tr>
-
-	<tr>
-		<td>nog meer data</td>
-	</tr>
-	<tr>
-		<td>nog meer data</td>
-	</tr>
-
-</table>
+<ul>
+  <!-- in Angular moet je een aanroep van een functie specificeren bij een eventhandler -->
+  <li (click)="handleClickEvent($event, fruit)" *ngFor="let fruit of fruits">{{fruit}}</li>
+</ul>
